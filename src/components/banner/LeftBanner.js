@@ -8,6 +8,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
@@ -22,7 +23,8 @@ const LeftBanner = () => {
       <div className="flex flex-col gap-5">
         <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
         <h1 className="text-6xl font-bold text-white">
-          Hi, I'm <span className="text-designColor capitalize">Shimiyon S</span>
+          Hi, I'm{" "}
+          <span className="text-designColor capitalize">Shimiyon S</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
           a <span>{text}</span>
@@ -44,7 +46,7 @@ const LeftBanner = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            <a href="https://github.com/noorjsdivs/portfolioone" target="blank">
+            {/* <a href="https://github.com/noorjsdivs/portfolioone" target="blank">
               <span className="bannerIcon">
                 <FaGithub />
               </span>
@@ -63,6 +65,27 @@ const LeftBanner = () => {
               <span className="bannerIcon">
                 <FaLinkedinIn />
               </span>
+            </a> */}
+            <a
+              href="https://github.com/ShimiyonS"
+              style={{ textDecoration: "none", color: "inherit" }}
+              className="bannerIcon"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/shimiyon-s-060610187/"
+              style={{ textDecoration: "none", color: "inherit" }}
+              className="bannerIcon"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a
+              href="mailto:shimiyon21@gmail.com"
+              // style={{ textDecoration: "none", color: "inherit" }}
+              className="bannerIcon"
+            >
+              <MdEmail />
             </a>
           </div>
         </div>

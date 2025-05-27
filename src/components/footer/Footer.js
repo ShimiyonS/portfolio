@@ -1,6 +1,14 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  // FaGithub,
+  FaEnvelope,
+} from "react-icons/fa";
 import { logo } from "../../assets/index";
+import { FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -11,15 +19,27 @@ const Footer = () => {
           Shimiyon .S
         </div>
         <div className="flex gap-4">
-          <span className="bannerIcon">
-            <FaFacebookF />
-          </span>
-          <span className="bannerIcon">
-            <FaTwitter />
-          </span>
-          <span className="bannerIcon">
+          <a
+            href="https://github.com/ShimiyonS"
+            style={{ textDecoration: "none", color: "inherit" }}
+            className="bannerIcon"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shimiyon-s-060610187/"
+            style={{ textDecoration: "none", color: "inherit" }}
+            className="bannerIcon"
+          >
             <FaLinkedinIn />
-          </span>
+          </a>
+          <a
+            href="mailto:shimiyon21@gmail.com"
+            // style={{ textDecoration: "none", color: "inherit" }}
+            className="bannerIcon"
+          >
+            <MdEmail />
+          </a>
         </div>
       </div>
       <div className="w-full h-full">

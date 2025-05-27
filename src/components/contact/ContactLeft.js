@@ -1,6 +1,13 @@
-import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import React from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaGithub,
+  FaEnvelope,
+} from "react-icons/fa";
 import { contactImg } from "../../assets/index";
+import { MdEmail } from "react-icons/md";
 
 const ContactLeft = () => {
   return (
@@ -20,28 +27,41 @@ const ContactLeft = () => {
           ipsam autem cumque, accusantium dicta odio.
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Phone: <span className="text-lightText">+91 9677503363</span>
+          Phone: <span className="text-lightText">+91 9361143505</span>
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Email: <span className="text-lightText">shimiyonsamuvel@gmail.com</span>
+          Email:{" "}
+          <span className="text-lightText">shimiyon21@gmail.com</span>
         </p>
       </div>
       <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
         <div className="flex gap-4">
-          <span className="bannerIcon">
-            <FaFacebookF />
-          </span>
-          <span className="bannerIcon">
-            <FaTwitter />
-          </span>
-          <span className="bannerIcon">
+          <a
+            href="https://github.com/ShimiyonS"
+            style={{ textDecoration: "none", color: "inherit" }}
+            className="bannerIcon"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shimiyon-s-060610187/"
+            style={{ textDecoration: "none", color: "inherit" }}
+            className="bannerIcon"
+          >
             <FaLinkedinIn />
-          </span>
+          </a>
+          <a
+            href="mailto:shimiyon21@gmail.com"
+            // style={{ textDecoration: "none", color: "inherit" }}
+            className="bannerIcon"
+          >
+            <MdEmail />
+          </a>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default ContactLeft
+export default ContactLeft;
