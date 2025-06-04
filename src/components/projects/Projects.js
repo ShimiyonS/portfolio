@@ -25,8 +25,7 @@ const Projects = () => {
         />
         <ProjectsCard
           title="Portfolios (Web and Mobile apps)"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          des=" Showcasing a range of responsive web and mobile apps built to engage, inform, and inspire. Each portfolio item reflects creativity blended with technical precision."
           src={projectTwo}
           type="protfolio"
           profilelink="https://drive.google.com/drive/folders/1G-bAU7RqtlagrcJOhCprUldHpnQh4stU?usp=sharing"
