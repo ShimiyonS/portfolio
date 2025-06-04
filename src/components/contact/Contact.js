@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Title from "../layouts/Title";
 import ContactLeft from "./ContactLeft";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -43,32 +43,32 @@ const Contact = () => {
         message: message,
       };
       console.log(username, phoneNumber, email, subject, message);
-      emailjs
-        .send(
-          "service_0privhq", // replace with your EmailJS service ID
-          "template_p0uv4l1", // replace with your EmailJS template ID
-          templateParams,
-          "6NDySMv4MlyHGpHzq" // replace with your EmailJS public key
-        )
-        .then(
-          (response) => {
-            setSuccessMsg(
-              `Thank you dear ${username}, your message has been sent successfully!`
-            );
-            console.log(
-              `Thank you dear ${username}, your message has been sent successfully!`
-            );
-            setErrMsg("");
-            setUsername("");
-            setPhoneNumber("");
-            setEmail("");
-            setSubject("");
-            setMessage("");
-          },
-          (error) => {
-            setErrMsg("Failed to send the message, please try again.");
-          }
-        );
+      // emailjs
+      //   .send(
+      //     "service_0privhq", // replace with your EmailJS service ID
+      //     "template_p0uv4l1", // replace with your EmailJS template ID
+      //     templateParams,
+      //     "6NDySMv4MlyHGpHzq" // replace with your EmailJS public key
+      //   )
+      //   .then(
+      //     (response) => {
+      //       setSuccessMsg(
+      //         `Thank you dear ${username}, your message has been sent successfully!`
+      //       );
+      //       console.log(
+      //         `Thank you dear ${username}, your message has been sent successfully!`
+      //       );
+      //       setErrMsg("");
+      //       setUsername("");
+      //       setPhoneNumber("");
+      //       setEmail("");
+      //       setSubject("");
+      //       setMessage("");
+      //     },
+      //     (error) => {
+      //       setErrMsg("Failed to send the message, please try again.");
+      //     }
+      //   );
       setErrMsg("");
       setUsername("");
       setPhoneNumber("");
