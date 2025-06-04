@@ -29,7 +29,7 @@ const Projects = () => {
               Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
           src={projectTwo}
           type="protfolio"
-          profilelink="https://drive.google.com/drive/u/0/folders/1G-bAU7RqtlagrcJOhCprUldHpnQh4stU"
+          profilelink="https://drive.google.com/drive/folders/1G-bAU7RqtlagrcJOhCprUldHpnQh4stU?usp=sharing"
         />
         <ProjectsCard
           title="SOCIAL MEDIA CLONE"
